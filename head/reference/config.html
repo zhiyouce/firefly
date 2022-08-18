@@ -338,9 +338,9 @@
   </thead>
   <tbody>
     <tr>
-      <td>size</td>
-      <td>The size of the cache</td>
-      <td><a href="https://pkg.go.dev/github.com/docker/go-units#BytesSize"><code class="language-plaintext highlighter-rouge">BytesSize</code></a></td>
+      <td>limit</td>
+      <td>Max number of cache items for batches</td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
       <td><code class="language-plaintext highlighter-rouge">&lt;nil&gt;</code></td>
     </tr>
     <tr>
@@ -1505,9 +1505,9 @@
   </thead>
   <tbody>
     <tr>
-      <td>size</td>
-      <td>The size of the cache</td>
-      <td><a href="https://pkg.go.dev/github.com/docker/go-units#BytesSize"><code class="language-plaintext highlighter-rouge">BytesSize</code></a></td>
+      <td>limit</td>
+      <td>Max number of cache items for blockchain events</td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
       <td><code class="language-plaintext highlighter-rouge">&lt;nil&gt;</code></td>
     </tr>
     <tr>
@@ -1583,14 +1583,47 @@
   </thead>
   <tbody>
     <tr>
-      <td>size</td>
-      <td>Size of blockchain cache</td>
+      <td>limit</td>
+      <td>Max number of cache items for blockchain plugin cache</td>
       <td><code class="language-plaintext highlighter-rouge">string</code></td>
       <td><code class="language-plaintext highlighter-rouge">&lt;nil&gt;</code></td>
     </tr>
     <tr>
       <td>ttl</td>
       <td>Time to live for blockchain cache items</td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;nil&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+      <h2 id="cacheoperations">
+        
+        
+          <a href="#cacheoperations" class="anchor-heading" aria-labelledby="cacheoperations"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> cache.operations
+        
+        
+      </h2>
+    
+
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Default Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>limit</td>
+      <td>Max number of cache items for operations</td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;nil&gt;</code></td>
+    </tr>
+    <tr>
+      <td>ttl</td>
+      <td>Time to live for operation cache items</td>
       <td><code class="language-plaintext highlighter-rouge">string</code></td>
       <td><code class="language-plaintext highlighter-rouge">&lt;nil&gt;</code></td>
     </tr>
@@ -2450,9 +2483,9 @@
   </thead>
   <tbody>
     <tr>
-      <td>size</td>
-      <td>The size of the cache</td>
-      <td><a href="https://pkg.go.dev/github.com/docker/go-units#BytesSize"><code class="language-plaintext highlighter-rouge">BytesSize</code></a></td>
+      <td>limit</td>
+      <td>Max number of cache items for blockchain listener topics</td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
       <td><code class="language-plaintext highlighter-rouge">&lt;nil&gt;</code></td>
     </tr>
     <tr>
@@ -2516,9 +2549,9 @@
   </thead>
   <tbody>
     <tr>
-      <td>size</td>
-      <td>The size of the cache</td>
-      <td><a href="https://pkg.go.dev/github.com/docker/go-units#BytesSize"><code class="language-plaintext highlighter-rouge">BytesSize</code></a></td>
+      <td>limit</td>
+      <td>Max number of cache items for private group addresses</td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
       <td><code class="language-plaintext highlighter-rouge">&lt;nil&gt;</code></td>
     </tr>
     <tr>
