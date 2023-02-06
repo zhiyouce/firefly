@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
   
-    <title>Batch - Hyperledger FireFly Docs</title>
+    <title>OperationWithDetail - Hyperledger FireFly Docs</title>
 
     
   
@@ -27,16 +27,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Batch | Hyperledger FireFly Docs</title>
+<title>OperationWithDetail | Hyperledger FireFly Docs</title>
 <meta name="generator" content="Jekyll v3.9.2" />
-<meta property="og:title" content="Batch" />
+<meta property="og:title" content="OperationWithDetail" />
 <meta property="og:locale" content="en" />
 <meta property="og:site_name" content="Hyperledger FireFly Docs" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Batch" />
+<meta property="twitter:title" content="OperationWithDetail" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","headline":"Batch","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/firefly/head/images/hyperledger-firefly_color.svg"}},"url":"/firefly/head/reference/types/batch.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","headline":"OperationWithDetail","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/firefly/head/images/hyperledger-firefly_color.svg"}},"url":"/firefly/head/reference/types/operationwithdetail.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -154,8 +154,8 @@
                     <a href="/firefly/head/reference/types/transaction.html" class="nav-list-link">Transaction</a>
                   </li><li class="nav-list-item ">
                     <a href="/firefly/head/reference/types/operation.html" class="nav-list-link">Operation</a>
-                  </li><li class="nav-list-item ">
-                    <a href="/firefly/head/reference/types/operationwithdetail.html" class="nav-list-link">OperationWithDetail</a>
+                  </li><li class="nav-list-item  active">
+                    <a href="/firefly/head/reference/types/operationwithdetail.html" class="nav-list-link active">OperationWithDetail</a>
                   </li><li class="nav-list-item ">
                     <a href="/firefly/head/reference/types/ffi.html" class="nav-list-link">FFI</a>
                   </li><li class="nav-list-item ">
@@ -178,8 +178,8 @@
                     <a href="/firefly/head/reference/types/datatype.html" class="nav-list-link">Datatype</a>
                   </li><li class="nav-list-item ">
                     <a href="/firefly/head/reference/types/group.html" class="nav-list-link">Group</a>
-                  </li><li class="nav-list-item  active">
-                    <a href="/firefly/head/reference/types/batch.html" class="nav-list-link active">Batch</a>
+                  </li><li class="nav-list-item ">
+                    <a href="/firefly/head/reference/types/batch.html" class="nav-list-link">Batch</a>
                   </li><li class="nav-list-item ">
                     <a href="/firefly/head/reference/types/namespace.html" class="nav-list-link">Namespace</a>
                   </li><li class="nav-list-item ">
@@ -268,17 +268,17 @@
                 <li class="breadcrumb-nav-list-item"><a href="/firefly/head/reference/">Reference</a></li>
                 <li class="breadcrumb-nav-list-item"><a href="/firefly/head/reference/types/">Core Resources</a></li>
               
-              <li class="breadcrumb-nav-list-item"><span>Batch</span></li>
+              <li class="breadcrumb-nav-list-item"><span>OperationWithDetail</span></li>
             </ol>
           </nav>
         
       
       <div id="main-content" class="main-content" role="main">
         
-          <h1 class="no_toc" id="batch">
+          <h1 class="no_toc" id="operationwithdetail">
         
         
-          <a href="#batch" class="anchor-heading" aria-labelledby="batch"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Batch
+          <a href="#operationwithdetail" class="anchor-heading" aria-labelledby="operationwithdetail"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> OperationWithDetail
         
         
       </h1>
@@ -293,38 +293,23 @@
     
 
 <ol id="markdown-toc">
-  <li><a href="#batch-1" id="markdown-toc-batch-1">Batch</a>    <ol>
+  <li><a href="#operationwithdetail-1" id="markdown-toc-operationwithdetail-1">OperationWithDetail</a>    <ol>
       <li><a href="#example" id="markdown-toc-example">Example</a></li>
       <li><a href="#field-descriptions" id="markdown-toc-field-descriptions">Field Descriptions</a></li>
     </ol>
   </li>
-  <li><a href="#batchpayload" id="markdown-toc-batchpayload">BatchPayload</a></li>
-  <li><a href="#transactionref" id="markdown-toc-transactionref">TransactionRef</a></li>
 </ol><hr />
-      <h2 id="batch-1">
+      <h2 id="operationwithdetail-1">
         
         
-          <a href="#batch-1" class="anchor-heading" aria-labelledby="batch-1"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Batch
+          <a href="#operationwithdetail-1" class="anchor-heading" aria-labelledby="operationwithdetail-1"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> OperationWithDetail
         
         
       </h2>
     
 
-<p>A batch bundles a number of off-chain messages, with associated data, into a single payload
-for broadcast or private transfer.</p>
-
-<p>This allows the transfer of many messages (hundreds) to be backed by a single blockchain
-transaction. Thus making very efficient use of the blockchain.</p>
-
-<p>The same benefit also applies to the off-chain transport mechanism.</p>
-
-<p>Shared storage operations benefit from the same optimization. In IPFS for example chunks are 256Kb
-in size, so there is a great throughput benefit in packaging many small messages into a
-single large payload.</p>
-
-<p>For a data exchange transport, there is often cryptography and transport overhead for each individual
-transport level send between participants. This is particularly true if using a data exchange
-transport with end-to-end payload encryption, using public/private key cryptography for the envelope.</p>
+<p>Operation with detail is an extension to operations that allow additional information to be encapsulated with an operation. An operation
+can be supplemented by a connector and that information will be returned in the <code class="language-plaintext highlighter-rouge">detail</code> field.</p>
       <h3 id="example">
         
         
@@ -335,22 +320,110 @@ transport with end-to-end payload encryption, using public/private key cryptogra
     
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"894bc0ea-0c2e-4ca4-bbca-b4c39a816bbb"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"private"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"04a8b0c4-03c2-4935-85a1-87d17cddc20a"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"namespace"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ns1"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"node"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5802ab80-fa71-4f52-9189-fb534de93756"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"group"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cd1fedb69fb83ad5c0c62f2f5d0b04c59d2e41740916e6815a8e063b337bd32e"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"created"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-05-16T01:23:16Z"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"author"</span><span class="p">:</span><span class="w"> </span><span class="s2">"did:firefly:org/example"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x0a989907dcd17272257f3ebcf72f4351df65a846"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"hash"</span><span class="p">:</span><span class="w"> </span><span class="s2">"78d6861f860c8724468c9254b99dc09e7d9fd2d43f26f7bd40ecc9ee47be384d"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"payload"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"tx"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"private"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"04930d84-0227-4044-9d6d-82c2952a0108"</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="nl">"messages"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-        </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
+    </span><span class="nl">"tx"</span><span class="p">:</span><span class="w"> </span><span class="s2">"99543134-769b-42a8-8be4-a5f8873f969d"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sharedstorage_upload_batch"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Succeeded"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"plugin"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ipfs"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"input"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"80d89712-57f3-48fe-b085-a8cba6e0667d"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"output"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"payloadRef"</span><span class="p">:</span><span class="w"> </span><span class="s2">"QmWj3tr2aTHqnRYovhS2mQAjYneRtMWJSU4M4RdAJpJwEC"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"created"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-05-16T01:23:15Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"detail"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"created"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2023-01-27T17:04:24.26406392Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"firstSubmit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2023-01-27T17:04:24.419913295Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"gas"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4161076"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"gasPrice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"history"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"actions"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="p">{</span><span class="w">
+                        </span><span class="nl">"action"</span><span class="p">:</span><span class="w"> </span><span class="s2">"AssignNonce"</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"lastOccurrence"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"time"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
+                    </span><span class="p">},</span><span class="w">
+                    </span><span class="p">{</span><span class="w">
+                        </span><span class="nl">"action"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RetrieveGasPrice"</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"lastOccurrence"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2023-01-27T17:11:41.161213303Z"</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2023-01-27T17:11:41.161213303Z"</span><span class="w">
+                    </span><span class="p">},</span><span class="w">
+                    </span><span class="p">{</span><span class="w">
+                        </span><span class="nl">"action"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Submit"</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"lastOccurrence"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2023-01-27T17:11:41.222374636Z"</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2023-01-27T17:11:41.222374636Z"</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                </span><span class="p">],</span><span class="w">
+                </span><span class="nl">"subStatus"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Received"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2023-01-27T17:11:41.122965803Z"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"actions"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="p">{</span><span class="w">
+                        </span><span class="nl">"action"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReceiveReceipt"</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"lastOccurrence"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2023-01-27T17:11:47.930332625Z"</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2023-01-27T17:11:47.930332625Z"</span><span class="w">
+                    </span><span class="p">},</span><span class="w">
+                    </span><span class="p">{</span><span class="w">
+                        </span><span class="nl">"action"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Confirm"</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"lastOccurrence"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2023-01-27T17:12:02.660275549Z"</span><span class="p">,</span><span class="w">
+                        </span><span class="nl">"time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2023-01-27T17:12:02.660275549Z"</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                </span><span class="p">],</span><span class="w">
+                </span><span class="nl">"subStatus"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Tracking"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2023-01-27T17:11:41.222400219Z"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"actions"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+                </span><span class="nl">"subStatus"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Confirmed"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2023-01-27T17:12:02.660309382Z"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"historySummary"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"subStatus"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Received"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"action"</span><span class="p">:</span><span class="w"> </span><span class="s2">"AssignNonce"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"action"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RetrieveGasPrice"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"action"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Submit"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"subStatus"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Tracking"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"action"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReceiveReceipt"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"action"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Confirm"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"subStatus"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Confirmed"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"sequenceId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0185f42f-fec8-93df-aeba-387417d477e0"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Succeeded"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"transactionHash"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0xfb39178fee8e725c03647b8286e6f5cb13f982abf685479a9ee59e8e9d9e51d8"</span><span class="w">
     </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
@@ -374,118 +447,68 @@ transport with end-to-end payload encryption, using public/private key cryptogra
   <tbody>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">id</code></td>
-      <td>The UUID of the batch</td>
+      <td>The UUID of the operation</td>
       <td><a href="simpletypes#uuid"><code class="language-plaintext highlighter-rouge">UUID</code></a></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">type</code></td>
-      <td>The type of the batch</td>
-      <td><code class="language-plaintext highlighter-rouge">FFEnum</code>:<br /><code class="language-plaintext highlighter-rouge">"broadcast"</code><br /><code class="language-plaintext highlighter-rouge">"private"</code></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">namespace</code></td>
-      <td>The namespace of the batch</td>
+      <td>The namespace of the operation</td>
       <td><code class="language-plaintext highlighter-rouge">string</code></td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">node</code></td>
-      <td>The UUID of the node that generated the batch</td>
+      <td><code class="language-plaintext highlighter-rouge">tx</code></td>
+      <td>The UUID of the FireFly transaction the operation is part of</td>
       <td><a href="simpletypes#uuid"><code class="language-plaintext highlighter-rouge">UUID</code></a></td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">group</code></td>
-      <td>The privacy group the batch is sent to, for private batches</td>
-      <td><code class="language-plaintext highlighter-rouge">Bytes32</code></td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td>The type of the operation</td>
+      <td><code class="language-plaintext highlighter-rouge">FFEnum</code>:<br /><code class="language-plaintext highlighter-rouge">"blockchain_pin_batch"</code><br /><code class="language-plaintext highlighter-rouge">"blockchain_network_action"</code><br /><code class="language-plaintext highlighter-rouge">"blockchain_deploy"</code><br /><code class="language-plaintext highlighter-rouge">"blockchain_invoke"</code><br /><code class="language-plaintext highlighter-rouge">"sharedstorage_upload_batch"</code><br /><code class="language-plaintext highlighter-rouge">"sharedstorage_upload_blob"</code><br /><code class="language-plaintext highlighter-rouge">"sharedstorage_upload_value"</code><br /><code class="language-plaintext highlighter-rouge">"sharedstorage_download_batch"</code><br /><code class="language-plaintext highlighter-rouge">"sharedstorage_download_blob"</code><br /><code class="language-plaintext highlighter-rouge">"dataexchange_send_batch"</code><br /><code class="language-plaintext highlighter-rouge">"dataexchange_send_blob"</code><br /><code class="language-plaintext highlighter-rouge">"token_create_pool"</code><br /><code class="language-plaintext highlighter-rouge">"token_activate_pool"</code><br /><code class="language-plaintext highlighter-rouge">"token_transfer"</code><br /><code class="language-plaintext highlighter-rouge">"token_approval"</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">status</code></td>
+      <td>The current status of the operation</td>
+      <td><code class="language-plaintext highlighter-rouge">OpStatus</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">plugin</code></td>
+      <td>The plugin responsible for performing the operation</td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">input</code></td>
+      <td>The input to this operation</td>
+      <td><a href="simpletypes#jsonobject"><code class="language-plaintext highlighter-rouge">JSONObject</code></a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">output</code></td>
+      <td>Any output reported back from the plugin for this operation</td>
+      <td><a href="simpletypes#jsonobject"><code class="language-plaintext highlighter-rouge">JSONObject</code></a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">error</code></td>
+      <td>Any error reported back from the plugin for this operation</td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">created</code></td>
-      <td>The time the batch was sealed</td>
+      <td>The time the operation was created</td>
       <td><a href="simpletypes#fftime"><code class="language-plaintext highlighter-rouge">FFTime</code></a></td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">author</code></td>
-      <td>The DID of identity of the submitter</td>
-      <td><code class="language-plaintext highlighter-rouge">string</code></td>
+      <td><code class="language-plaintext highlighter-rouge">updated</code></td>
+      <td>The last update time of the operation</td>
+      <td><a href="simpletypes#fftime"><code class="language-plaintext highlighter-rouge">FFTime</code></a></td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">key</code></td>
-      <td>The on-chain signing key used to sign the transaction</td>
-      <td><code class="language-plaintext highlighter-rouge">string</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">hash</code></td>
-      <td>The hash of the manifest of the batch</td>
-      <td><code class="language-plaintext highlighter-rouge">Bytes32</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">payload</code></td>
-      <td>Batch.payload</td>
-      <td><a href="#batchpayload"><code class="language-plaintext highlighter-rouge">BatchPayload</code></a></td>
-    </tr>
-  </tbody>
-</table>
-      <h2 id="batchpayload">
-        
-        
-          <a href="#batchpayload" class="anchor-heading" aria-labelledby="batchpayload"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> BatchPayload
-        
-        
-      </h2>
-    
-
-<table>
-  <thead>
-    <tr>
-      <th>Field Name</th>
-      <th>Description</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">tx</code></td>
-      <td>BatchPayload.tx</td>
-      <td><a href="#transactionref"><code class="language-plaintext highlighter-rouge">TransactionRef</code></a></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">messages</code></td>
-      <td>BatchPayload.messages</td>
-      <td><a href="message#message"><code class="language-plaintext highlighter-rouge">Message[]</code></a></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">data</code></td>
-      <td>BatchPayload.data</td>
-      <td><a href="data#data"><code class="language-plaintext highlighter-rouge">Data[]</code></a></td>
-    </tr>
-  </tbody>
-</table>
-      <h2 id="transactionref">
-        
-        
-          <a href="#transactionref" class="anchor-heading" aria-labelledby="transactionref"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> TransactionRef
-        
-        
-      </h2>
-    
-
-<table>
-  <thead>
-    <tr>
-      <th>Field Name</th>
-      <th>Description</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">type</code></td>
-      <td>The type of the FireFly transaction</td>
-      <td><code class="language-plaintext highlighter-rouge">FFEnum</code>:</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">id</code></td>
-      <td>The UUID of the FireFly transaction</td>
+      <td><code class="language-plaintext highlighter-rouge">retry</code></td>
+      <td>If this operation was initiated as a retry to a previous operation, this field points to the UUID of the operation being retried</td>
       <td><a href="simpletypes#uuid"><code class="language-plaintext highlighter-rouge">UUID</code></a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">detail</code></td>
+      <td>Additional detailed information about an operation provided by the connector</td>
+      <td>``</td>
     </tr>
   </tbody>
 </table>
