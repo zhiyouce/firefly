@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../../reference/types/wsstart/">
+        <link rel="prev" href="../api_query_syntax/">
       
       
-        <link rel="next" href="../internal_event_sequencing/">
+        <link rel="next" href="../blockchain_operation_status/">
       
       
       <link rel="icon" href="../../assets/favicon.ico">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Blockchain Connector Toolkit - Hyperledger FireFly</title>
+        <title>Blockchain Operation Errors - Hyperledger FireFly</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#blockchain-connector-toolkit" class="md-skip">
+        <a href="#blockchain-error-messages" class="md-skip">
           Skip to content
         </a>
       
@@ -133,7 +133,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Blockchain Connector Toolkit
+              Blockchain Operation Errors
             
           </span>
         </div>
@@ -1683,8 +1683,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -1717,11 +1719,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -1735,7 +1737,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Reference
@@ -1749,7 +1751,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/api_post_syntax/" class="md-nav__link">
+      <a href="../api_post_syntax/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1770,7 +1772,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/api_query_syntax/" class="md-nav__link">
+      <a href="../api_query_syntax/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1788,10 +1790,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../reference/blockchain_operation_errors/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Blockchain Operation Errors
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1800,6 +1820,75 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#blockchain-error-messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Blockchain Error Messages
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#default-error-format-with-hyperledger-firefly-13-and-hyperledger-besu-2430" class="md-nav__link">
+    <span class="md-ellipsis">
+      Default Error Format With Hyperledger FireFly 1.3 and Hyperledger Besu 24.3.0
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-retrieval-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Retrieval Details
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Error Retrieval Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#format-of-a-firefly-evmconnect-error-message" class="md-nav__link">
+    <span class="md-ellipsis">
+      Format of a firefly-evmconnect Error Message
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retrieving-evm-blockchain-transaction-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retrieving EVM Blockchain Transaction Errors
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1812,7 +1901,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/blockchain_operation_status/" class="md-nav__link">
+      <a href="../blockchain_operation_status/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1833,7 +1922,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/config/" class="md-nav__link">
+      <a href="../config/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1854,7 +1943,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/events/" class="md-nav__link">
+      <a href="../events/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1875,7 +1964,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/firefly_interface_format/" class="md-nav__link">
+      <a href="../firefly_interface_format/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1896,7 +1985,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/idempotency/" class="md-nav__link">
+      <a href="../idempotency/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1917,7 +2006,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/identities/" class="md-nav__link">
+      <a href="../identities/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1938,7 +2027,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/namespaces/" class="md-nav__link">
+      <a href="../namespaces/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1959,7 +2048,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/tls/" class="md-nav__link">
+      <a href="../tls/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2019,7 +2108,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/microservices/fftokens/" class="md-nav__link">
+      <a href="../microservices/fftokens/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2135,7 +2224,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/types/batch/" class="md-nav__link">
+      <a href="../types/batch/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2156,7 +2245,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/types/blockchainevent/" class="md-nav__link">
+      <a href="../types/blockchainevent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2177,7 +2266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/types/contractapi/" class="md-nav__link">
+      <a href="../types/contractapi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2198,7 +2287,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/types/contractlistener/" class="md-nav__link">
+      <a href="../types/contractlistener/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2219,7 +2308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/types/data/" class="md-nav__link">
+      <a href="../types/data/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2240,7 +2329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/types/datatype/" class="md-nav__link">
+      <a href="../types/datatype/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2261,7 +2350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/types/event/" class="md-nav__link">
+      <a href="../types/event/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2282,7 +2371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/types/ffi/" class="md-nav__link">
+      <a href="../types/ffi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2303,7 +2392,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/types/group/" class="md-nav__link">
+      <a href="../types/group/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2324,7 +2413,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/types/identity/" class="md-nav__link">
+      <a href="../types/identity/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2345,7 +2434,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/types/message/" class="md-nav__link">
+      <a href="../types/message/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2366,7 +2455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/types/namespace/" class="md-nav__link">
+      <a href="../types/namespace/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2387,7 +2476,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/types/nextpin/" class="md-nav__link">
+      <a href="../types/nextpin/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2408,7 +2497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/types/operation/" class="md-nav__link">
+      <a href="../types/operation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2429,7 +2518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/types/operationwithdetail/" class="md-nav__link">
+      <a href="../types/operationwithdetail/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2450,7 +2539,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/types/simpletypes/" class="md-nav__link">
+      <a href="../types/simpletypes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2471,7 +2560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/types/subscription/" class="md-nav__link">
+      <a href="../types/subscription/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2492,7 +2581,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/types/tokenapproval/" class="md-nav__link">
+      <a href="../types/tokenapproval/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2513,7 +2602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/types/tokenpool/" class="md-nav__link">
+      <a href="../types/tokenpool/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2534,7 +2623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/types/tokentransfer/" class="md-nav__link">
+      <a href="../types/tokentransfer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2555,7 +2644,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/types/transaction/" class="md-nav__link">
+      <a href="../types/transaction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2576,7 +2665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/types/verifier/" class="md-nav__link">
+      <a href="../types/verifier/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2597,7 +2686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/types/wsack/" class="md-nav__link">
+      <a href="../types/wsack/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2618,7 +2707,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/types/wserror/" class="md-nav__link">
+      <a href="../types/wserror/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2639,7 +2728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/types/wsstart/" class="md-nav__link">
+      <a href="../types/wsstart/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2672,10 +2761,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -2694,11 +2781,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -2712,7 +2799,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Architecture
@@ -2723,30 +2810,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Blockchain Connector Toolkit
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../architecture/blockchain_connector_framework/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2755,104 +2822,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#blockchain-connector-framework" class="md-nav__link">
-    <span class="md-ellipsis">
-      Blockchain Connector Framework
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#connector-toolkit-architecture" class="md-nav__link">
-    <span class="md-ellipsis">
-      Connector Toolkit Architecture
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#assumptions-requirements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Assumptions / Requirements
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#nonce-management-in-the-simple-transaction-handler" class="md-nav__link">
-    <span class="md-ellipsis">
-      Nonce management in the simple transaction handler
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Nonce management in the simple transaction handler">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#avoid-multiple-nonce-management-systems-against-the-same-signing-key" class="md-nav__link">
-    <span class="md-ellipsis">
-      Avoid multiple nonce management systems against the same signing key
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#why-at-source-nonce-management-was-chosen-vs-at-target" class="md-nav__link">
-    <span class="md-ellipsis">
-      Why "at source" nonce management was chosen vs. "at target"
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#transaction-handler" class="md-nav__link">
-    <span class="md-ellipsis">
-      Transaction Handler
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#event-streams" class="md-nav__link">
-    <span class="md-ellipsis">
-      Event Streams
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2865,7 +2834,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../internal_event_sequencing/" class="md-nav__link">
+      <a href="../../architecture/internal_event_sequencing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2886,7 +2855,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../multiparty_event_sequencing/" class="md-nav__link">
+      <a href="../../architecture/multiparty_event_sequencing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2907,7 +2876,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../node_component_architecture/" class="md-nav__link">
+      <a href="../../architecture/node_component_architecture/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2928,7 +2897,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ping_pong_txflow/" class="md-nav__link">
+      <a href="../../architecture/ping_pong_txflow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2949,7 +2918,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../plugin_architecture/" class="md-nav__link">
+      <a href="../../architecture/plugin_architecture/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3396,8 +3365,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -3406,55 +3373,46 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#blockchain-connector-framework" class="md-nav__link">
+  <a href="#blockchain-error-messages" class="md-nav__link">
     <span class="md-ellipsis">
-      Blockchain Connector Framework
+      Blockchain Error Messages
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#connector-toolkit-architecture" class="md-nav__link">
+  <a href="#default-error-format-with-hyperledger-firefly-13-and-hyperledger-besu-2430" class="md-nav__link">
     <span class="md-ellipsis">
-      Connector Toolkit Architecture
+      Default Error Format With Hyperledger FireFly 1.3 and Hyperledger Besu 24.3.0
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#assumptions-requirements" class="md-nav__link">
+  <a href="#error-retrieval-details" class="md-nav__link">
     <span class="md-ellipsis">
-      Assumptions / Requirements
+      Error Retrieval Details
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#nonce-management-in-the-simple-transaction-handler" class="md-nav__link">
-    <span class="md-ellipsis">
-      Nonce management in the simple transaction handler
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Nonce management in the simple transaction handler">
+    <nav class="md-nav" aria-label="Error Retrieval Details">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#avoid-multiple-nonce-management-systems-against-the-same-signing-key" class="md-nav__link">
+  <a href="#format-of-a-firefly-evmconnect-error-message" class="md-nav__link">
     <span class="md-ellipsis">
-      Avoid multiple nonce management systems against the same signing key
+      Format of a firefly-evmconnect Error Message
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#why-at-source-nonce-management-was-chosen-vs-at-target" class="md-nav__link">
+  <a href="#retrieving-evm-blockchain-transaction-errors" class="md-nav__link">
     <span class="md-ellipsis">
-      Why "at source" nonce management was chosen vs. "at target"
+      Retrieving EVM Blockchain Transaction Errors
     </span>
   </a>
   
@@ -3462,24 +3420,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#transaction-handler" class="md-nav__link">
-    <span class="md-ellipsis">
-      Transaction Handler
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#event-streams" class="md-nav__link">
-    <span class="md-ellipsis">
-      Event Streams
-    </span>
-  </a>
   
 </li>
       
@@ -3501,198 +3441,95 @@
   
 
 
-<h1 id="blockchain-connector-toolkit">Blockchain Connector Toolkit<a class="headerlink" href="#blockchain-connector-toolkit" title="Permanent link">&para;</a></h1>
-<iframe width="736" height="414" src="https://www.youtube.com/embed/Bwx7MWjP1z0?start=259" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <h1>Blockchain Operation Errors</h1>
 
-<h2 id="blockchain-connector-framework">Blockchain Connector Framework<a class="headerlink" href="#blockchain-connector-framework" title="Permanent link">&para;</a></h2>
-<p>Hyperledger FireFly has a <a href="../../overview/key_components/connectors/">multi-tier pluggable architecture</a> for supporting blockchains of
-all shapes and sizes. This includes a remote API that allows a microservice connector to
-be built from scratch in any programming language.</p>
-<p>It also includes the <strong>Connector Toolkit</strong>, which is a pluggable SDK in Golang that provides
-a set of re-usable modules that can be used across blockchain implementations.</p>
-<blockquote>
-<p>This is the preferred way to build a new blockchain connector, if you are comfortable
-with coding in Golang and there are language bindings available for the raw RPC interface
-of your blockchain.</p>
-</blockquote>
-<h2 id="connector-toolkit-architecture">Connector Toolkit Architecture<a class="headerlink" href="#connector-toolkit-architecture" title="Permanent link">&para;</a></h2>
-<p><a href="../../images/firefly_transaction_manager.jpg"><img alt="FireFly Blockchain Connector Toolkit Architecture" src="../../images/firefly_transaction_manager.jpg" /></a></p>
-<p>The core component of the FireFly Connector Framework for Blockchains is a Go module
-called <a href="https://github.com/hyperledger/firefly-transaction-manager">FireFly Transaction Manager</a> (FFTM).</p>
-<p>FFTM is responsible for:</p>
+<h2 id="blockchain-error-messages">Blockchain Error Messages<a class="headerlink" href="#blockchain-error-messages" title="Permanent link">&para;</a></h2>
+<p>The receipt for a FireFly blockchain operation contains an <code>extraInfo</code> section that records additional information about the transaction. For example:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>&quot;receipt&quot;: {
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  ...
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  &quot;extraInfo&quot;: [
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    {
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>      {
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        &quot;contractAddress&quot;:&quot;0x87ae94ab290932c4e6269648bb47c86978af4436&quot;,
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>        &quot;cumulativeGasUsed&quot;:&quot;33812&quot;,
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        &quot;from&quot;:&quot;0x2b1c769ef5ad304a4889f2a07a6617cd935849ae&quot;,
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>        &quot;to&quot;:&quot;0x302259069aaa5b10dc6f29a9a3f72a8e52837cc3&quot;,
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>        &quot;gasUsed&quot;:&quot;33812&quot;,
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>        &quot;status&quot;:&quot;0&quot;,
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>        &quot;errorMessage&quot;:&quot;Not enough tokens&quot;, 
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>      }
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    }
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>  ],
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>  ...
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>},
+</code></pre></div>
+<p>The <code>errorMessage</code> field can be be set by a blockchain connector to provide FireFly and the end-user with more information about the reason why a tranasction failed. The blockchain connector can choose what information to include in <code>errorMessage</code> field. It may be set to an error message relating to the blockchain connector itself or an error message passed back from the blockchain or smart contract that was invoked.</p>
+<h2 id="default-error-format-with-hyperledger-firefly-13-and-hyperledger-besu-2430">Default Error Format With Hyperledger FireFly 1.3 and Hyperledger Besu 24.3.0<a class="headerlink" href="#default-error-format-with-hyperledger-firefly-13-and-hyperledger-besu-2430" title="Permanent link">&para;</a></h2>
+<p>If FireFly is configured to connect to a Besu EVM client, and Besu has been configured with the <code>revert-reason-enabled=true</code> setting (note - the default value for Besu is <code>false</code>) error messages passed to FireFly from the blockchain client itself will be set correctly in the FireFly blockchain operation. For example:</p>
 <ul>
-<li>
-<p>Submission of transactions to blockchains of all types</p>
-</li>
-<li>
-<p>Protocol connectivity decoupled with additional lightweight API connector</p>
-</li>
-<li>
-<p>Easy to add additional protocols that conform to normal patterns of TX submission / events</p>
-</li>
-<li>
-<p>Monitoring and updating blockchain operations</p>
-</li>
-<li>
-<p>Receipts</p>
-</li>
-<li>
-<p>Confirmations</p>
-</li>
-<li>
-<p>Extensible transaction handler with capabilities such as:</p>
-</li>
-<li>
-<p>Nonce management: idempotent submission of transactions, and assignment of nonces</p>
-</li>
-<li>Transaction management: pre-signing transactions, resubmission, customizable policy engine</li>
-<li>Gas management: Gas Gas station API integration</li>
-<li>
-<p>Transaction process history</p>
-</li>
-<li>
-<p>Event streaming</p>
-</li>
-<li>Protocol agnostic event polling/streaming support</li>
-<li>Reliable checkpoint restart</li>
-<li>At least once delivery API</li>
+<li><code>"errorMessage":"Not enough tokens"</code> for a revert error string from a smart contract</li>
 </ul>
-<h2 id="assumptions-requirements">Assumptions / Requirements<a class="headerlink" href="#assumptions-requirements" title="Permanent link">&para;</a></h2>
-<p>The framework is currently constrained to blockchains that adhere to certain basic principals:</p>
+<p>If the smart contract uses a custom error type, Besu will return the revert reason to FireFly as a hexadecimal string but FireFly will be unable to decode it into. In this case the blockchain operation error message and return values will be set to:</p>
+<ul>
+<li><code>"errorMessage":"FF23053: Error return value for custom error: &lt;revert hex string&gt;</code></li>
+<li><code>"returnValue":"&lt;revert hex string&gt;"</code></li>
+</ul>
+<p>A future update to FireFly could be made to automatically decode custom error revert reasons if FireFly knows the ABI for the custom error. See <a href="https://github.com/hyperledger/firefly/issues/1466">FireFly issue 1466</a> which describes the current limitation.</p>
+<p>If FireFly is configured to connect to Besu without <code>revert-reason-enabled=true</code> the error message will be set to:</p>
+<ul>
+<li><code>"errorMessage":"FF23054: Error return value unavailable"</code></li>
+</ul>
+<h2 id="error-retrieval-details">Error Retrieval Details<a class="headerlink" href="#error-retrieval-details" title="Permanent link">&para;</a></h2>
+<p>The precise format of the error message in a blockchain operation can vary based on different factors. The sections below describe in detail how the error message is populted, with specific references to the <code>firefly-evmconnect</code> blockchain connector.</p>
+<h3 id="format-of-a-firefly-evmconnect-error-message">Format of a <code>firefly-evmconnect</code> Error Message<a class="headerlink" href="#format-of-a-firefly-evmconnect-error-message" title="Permanent link">&para;</a></h3>
+<p>The following section describes the way that the <code>firefly-evmconnect</code> plugin uses the <code>errorMessage</code> field. This serves both as an explanation of how EVM-based transaction errors will be formatted, and as a guide that other blockchain connectors may decide to follow.</p>
+<p>The <code>errorMessage</code> field for a <code>firefly-evmconnect</code> transaction may contain one of the following:</p>
 <ol>
-<li>
-<p>Has transactions</p>
-</li>
-<li>
-<p>That are signed</p>
-</li>
-<li>
-<p>That can optionally have gas semantics (limits and prices, expressed in a blockchain specific way)</p>
-</li>
-<li>
-<p>Has events (or "logs")</p>
-</li>
-<li>
-<p>That are emitted as a deterministic outcome of transactions</p>
-</li>
-<li>
-<p>Has blocks</p>
-</li>
-<li>
-<p>Containing zero or more transactions, with their associated events</p>
-</li>
-<li>With a sequential numeric order</li>
-<li>With a hash</li>
-<li>
-<p>With a parent hash</p>
-</li>
-<li>
-<p>Has finality for transactions &amp; events that can be expressed as a level of confidence over time</p>
-</li>
-<li>
-<p>Confirmations: A number of sequential blocks in the canonical chain that contain the transaction</p>
-</li>
+<li>An error message from the FireFly blockchain connector</li>
+<li>For example <code>"FF23054: Error return value unavailable"</code></li>
+<li>A decoded error string from the blockchain transaction</li>
+<li>For example <code>Not enough tokens</code></li>
+<li>This could be an error string from a smart contract e.g. <code>require(requestedTokens &lt;= allowance, "Not enough tokens");</code></li>
+<li>An un-decoded byte string from the blockchain transaction</li>
+<li>For example 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>FF23053: Error return value for custom error: 0x1320fa6a00000000000000000000000000000000000000000000000000000000000000640000000000000000000000000000000000000000000000000000000000000010
+</code></pre></div></li>
+<li>This could be a custom error from a smart contract e.g.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>error AllowanceTooSmall(uint256 requested, uint256 allowance);
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>...
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>revert AllowanceTooSmall({ requested: 100, allowance: 20 });
+</code></pre></div></li>
+<li>If an error reason cannot be decoded the <code>returnValue</code> of the <code>extraInfo</code> will be set to the raw byte string. For example:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>&quot;receipt&quot;: {
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>  ...
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>  &quot;extraInfo&quot;: [
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>     {
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>       {
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>         &quot;contractAddress&quot;:&quot;0x87ae94ab290932c4e6269648bb47c86978af4436&quot;,
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>         &quot;cumulativeGasUsed&quot;:&quot;33812&quot;,
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>         &quot;from&quot;:&quot;0x2b1c769ef5ad304a4889f2a07a6617cd935849ae&quot;,
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>         &quot;to&quot;:&quot;0x302259069aaa5b10dc6f29a9a3f72a8e52837cc3&quot;,
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>         &quot;gasUsed&quot;:&quot;33812&quot;,
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>         &quot;status&quot;:&quot;0&quot;,
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>         &quot;errorMessage&quot;:&quot;FF23053: Error return value for custom error: 0x1320fa6a00000000000000000000000000000000000000000000000000000000000000640000000000000000000000000000000000000000000000000000000000000010&quot;, 
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>         &quot;returnValue&quot;:&quot;0x1320fa6a00000000000000000000000000000000000000000000000000000000000000640000000000000000000000000000000000000000000000000000000000000010&quot;
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>       }
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>     }
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>  ],
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>  ...
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>},
+</code></pre></div></li>
 </ol>
-<h2 id="nonce-management-in-the-simple-transaction-handler">Nonce management in the simple transaction handler<a class="headerlink" href="#nonce-management-in-the-simple-transaction-handler" title="Permanent link">&para;</a></h2>
-<p>The nonces for transactions is assigned as early as possible in the flow:</p>
-<ul>
-<li>Before the REST API for submission of the transaction occurs</li>
-<li>After the FFCAPI blockchain connector verifies the transaction can be encoded successfully to the chain</li>
-<li>With protection against multiple parallel API requests for the same signing address</li>
-<li>With stateful persistence meaning the connector knows about all nonces it previously allocated, to avoids duplicates</li>
-</ul>
-<p>This "at source" allocation of nonces provides the strictest assurance of order of transactions possible,
-because the order is locked in with the coordination of the business logic of the application submitting the transaction.</p>
-<p>As well as protecting against loss of transactions, this protects against duplication of transactions - even in crash
-recovery scenarios with a sufficiently reliable persistence layer.</p>
-<h3 id="avoid-multiple-nonce-management-systems-against-the-same-signing-key">Avoid multiple nonce management systems against the same signing key<a class="headerlink" href="#avoid-multiple-nonce-management-systems-against-the-same-signing-key" title="Permanent link">&para;</a></h3>
-<p>FFTM is optimized for cases where all transactions for a given signing address flow through the
-same FireFly connector. If you have signing and nonce allocation happening elsewhere, not going through the
-FireFly blockchain connector, then it is possible that the same nonce will be allocated in two places.</p>
-<blockquote>
-<p>Be careful that the signing keys for transactions you stream through the Nonce Management of the FireFly
-blockchain connector are not used elsewhere.</p>
-</blockquote>
-<p>If you must have multiple systems performing nonce management against the same keys you use with FireFly nonce management,
-you can set the <code>transactions.nonceStateTimeout</code> to <code>0</code> (or a low threshold like <code>100ms</code>) to cause the nonce management
-to query the pending transaction pool of the node every time a nonce is allocated.</p>
-<p>This reduces the window for concurrent nonce allocation to be small (basically the same as if you had
-multiple simple web/mobile wallets used against the same key), but it does not eliminate it completely it.</p>
-<h3 id="why-at-source-nonce-management-was-chosen-vs-at-target">Why "at source" nonce management was chosen vs. "at target"<a class="headerlink" href="#why-at-source-nonce-management-was-chosen-vs-at-target" title="Permanent link">&para;</a></h3>
-<p>The "at source" approach to ordering used in FFTM could be compared with the "at target" allocation of nonces used in
-<a href="https://github.com/hyperledger/firefly-ethconnect">EthConnect</a>).</p>
-<p>The "at target" approach optimizes for throughput and ability to send new transactions to the chain,
-with an at-least-once delivery assurance to the applications.</p>
-<p>An "at target" algorithm as used in EthConnect could resume transaction delivery automatically without operator intervention
-from almost all scenarios, including where nonces have been double allocated.</p>
-<p>However, "at target" comes with two compromises that mean FFTM chose the "at source" approach was chosen for FFTM:</p>
-<ul>
-<li>
-<p>Individual transactions might fail in certain scenarios, and subsequent transactions will still be streamed to the chain.
-  While desirable for automation and throughput, this reduces the ordering guarantee for high value transactions.</p>
-</li>
-<li>
-<p>In crash recovery scenarios the assurance is at-least-once delivery for "at target" ordering (rather than "exactly once"),
-  although the window can be made very small through various optimizations included in the EthConnect codebase.</p>
-</li>
-</ul>
-<h2 id="transaction-handler">Transaction Handler<a class="headerlink" href="#transaction-handler" title="Permanent link">&para;</a></h2>
-<p>The transaction Handler is a pluggable component that allows customized logic to be applied to the
-gas pricing, signing, submission and re-submission of transactions to the blockchain.</p>
-<p>The transaction Handler can store custom state in the state store of the FFTM code, which is also
-reported in status within the FireFly API/Explorer on the operation.</p>
-<p>A reference implementation is provided that:</p>
-<ul>
-<li>Submits transactions via the underlying FFCAPI</li>
-<li>Estimates gas price in one of three modes:</li>
-<li>Fixed: It is specified via configuration</li>
-<li>Connector: The FFCAPI is used to estimate the gas price (e.g. <code>eth_gasPrice</code> for EVM JSON/RPC)</li>
-<li>Gas Oracle: A REST API is called the the result mapped via a Go template</li>
-<li>Re-submits transactions after a configurable stale time</li>
-<li>Record detailed information about <a href="../../reference/blockchain_operation_status/">transaction sub-status and actions</a></li>
-<li>Emit customized metrics for transaction processing</li>
-</ul>
-<p>The reference implementation is available <a href="https://github.com/hyperledger/firefly-transaction-manager/blob/main/pkg/txhandler/simple/simple_transaction_handler.go">here</a></p>
-<h2 id="event-streams">Event Streams<a class="headerlink" href="#event-streams" title="Permanent link">&para;</a></h2>
-<p>One of the largest pieces of heavy lifting code in the FFTM codebase, is the event stream
-support. This provides a WebSocket (and Webhook) interface that FireFly Core and the Tokens
-Connectors connect to in order to receive ordered streams of events from the blockchain.</p>
-<p>The interface down to the blockchain layer is via go channels, and there are lifecycle
-interactions over the FFCAPI to the blockchain specific code to add and remove listeners
-for different types of blockchain events.</p>
-<p>Some high architectural principals that informed the code:</p>
-<ul>
-<li>Event Stream</li>
-<li>A delivery stream of events that have been confirmed</li>
-<li>Only events that have reached finality are delivered to an event stream</li>
-<li>FireFly creates a single event stream <em>per namespace</em> from core</li>
-<li>Each token connector creates a single event stream</li>
-<li>If one event stream is blocked, it must not block other streams in the FFTM based runtime</li>
-<li>Listener (/Subscription)</li>
-<li>A blockchain specific specification for a set of events to listen to</li>
-<li>Specifies an initial block to listen from, and will replay all events from that block</li>
-<li>Can have multiple blockchain specific filters, to match multiple events</li>
-<li>The order of delivery <em>within</em> a listener matches the blockchain across all filters
-    &gt; - Note that the EVMConnect implementation of FFCAPI attempts to make this true across all listeners
-    &gt;   on an event stream. However, this is impossible when a new listener has been added,
-    &gt;   and that listener is catching up from an old block.</li>
-<li>Compatibility</li>
-<li>Has breaking changes from the API of EthConnect</li>
-<li>A component that has been upgraded to support EVMConnect,
-    can maintain backwards compatibility with EthConnect</li>
-<li>Batching &amp; Checkpoints</li>
-<li>Delivery on event streams is via batches, with a single confirmation for each batch</li>
-<li>At-least-once delivery of batches</li>
-<li>Checkpoints are written after each batch</li>
-<li>Chain head stability</li>
-<li>A configurable section of the head of the chain is considered unstable</li>
-<li>If no events have been delivered for a listener, checkpoints are still moved forwards</li>
-<li>These empty checkpoints will never be written in the unstable head of the chain</li>
-<li>Confirmation manager</li>
-<li>Plugged in between detection of the events, and assembling into batches</li>
-<li>Determines the final order based on order of confirmation on the blockchain</li>
-</ul>
-<p><a href="../../images/firefly_connector_toolkit_event_streams.jpg"><img alt="FireFly Connector Toolkit Event Streams" src="../../images/firefly_connector_toolkit_event_streams.jpg" /></a></p>
+<h3 id="retrieving-evm-blockchain-transaction-errors">Retrieving EVM Blockchain Transaction Errors<a class="headerlink" href="#retrieving-evm-blockchain-transaction-errors" title="Permanent link">&para;</a></h3>
+<p>The ability of a blockchain connector such as <code>firefly-evmconnect</code> to retrieve the reason for a transaction failure, is dependent on by the configuration of the blockchain it is connected to. For an EVM blockchain the reason why a transaction failed is recorded with the <code>REVERT</code> op code, with a <code>REASON</code> set to the reason for the failure. By default, most EVM clients do not store this reason in the transaction receipt. This is typically to reduce resource consumption such as memory usage in the client. It is usually possible to configure an EVM client to store the revert reason in the transaction receipt. For example Hyperledger Besu™ provides the <code>--revert-reason-enabled</code> configuration option. If the transaction receipt does not contain the revert reason it is possible to request that an EVM client re-run the transaction and return a trace of all of the op-codes, including the final <code>REVERT</code> <code>REASON</code>. This can be a resource intensive request to submit to an EVM client, and is only available on archive nodes or for very recent blocks.</p>
+<p>The <code>firefly-evmconnect</code> blockchain connector attempts to obtain the reason for a transaction revert and include it in the <code>extraInfo</code> field. It uses the following mechanisms, in this order:</p>
+<ol>
+<li>Checks if the blockchain transaction receipt contains the revert reason.</li>
+<li>If the revert reason is not in the receipt, and the <code>connector.traceTXForRevertReason</code> configuration option is set to <code>true</code>, calls <code>debug_traceTransaction</code> to obtain a full trace of the transaction and extract the revert reason. By default, <code>connector.traceTXForRevertReason</code> is set to <code>false</code> to avoid submitting high-resource requests to the EVM client.</li>
+</ol>
+<p>If the revert reason can be obtained using either mechanism above, the revert reason bytes are decoded in the following way:
+  - Attempts to decode the bytes as the standard <code>Error(string)</code> signature format and includes the decoded string in the <code>errorMessage</code>
+  - If the reason is not a standard <code>Error(String)</code> error, sets the <code>errorMessage</code> to <code>FF23053: Error return value for custom error: &lt;raw hex string&gt;</code> and includes the raw byte string in the <code>returnValue</code> field.</p>
 
 
 
@@ -3733,7 +3570,7 @@ for different types of blockchain events.</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../reference/types/wsstart/" class="md-footer__link md-footer__link--prev" aria-label="Previous: WSStart">
+          <a href="../api_query_syntax/" class="md-footer__link md-footer__link--prev" aria-label="Previous: API Query Syntax">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -3743,20 +3580,20 @@ for different types of blockchain events.</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                WSStart
+                API Query Syntax
               </div>
             </div>
           </a>
         
         
           
-          <a href="../internal_event_sequencing/" class="md-footer__link md-footer__link--next" aria-label="Next: Internal Event Sequencing">
+          <a href="../blockchain_operation_status/" class="md-footer__link md-footer__link--next" aria-label="Next: Blockchain Operation Status">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Internal Event Sequencing
+                Blockchain Operation Status
               </div>
             </div>
             <div class="md-footer__button md-icon">
